@@ -1,0 +1,20 @@
+,
+    ecutwfc =100, ecutrho =400,
+    input_dft = 'PBE',
+    vdw_corr = 'dft-d3',
+    occupations = 'smearing',
+    degauss = 0.005,
+    smearing = 'gaussian',
+    nosym=.true.,
+/
+&electrons
+    electron_maxstep = 150, 
+    conv_thr = 1.0d-6,
+    diagonalization='david',
+    mixing_beta=0.5d0,
+/
+&ions
+	ion_dynamics='bfgs',
+/
+&cell
+    press=

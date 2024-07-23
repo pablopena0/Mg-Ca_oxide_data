@@ -1,0 +1,59 @@
+&control
+	calculation='vc-relax', 
+    restart_mode='from_scratch', 
+	wf_collect= .false.,
+	prefix='MgO',
+    pseudo_dir = '.', 
+    outdir='./out', 
+    tprnfor= .true.,
+	tstress= .true.,
+/
+&system
+    ibrav=  0,
+    nat = 8, ntyp = 2,
+    ecutwfc =100, ecutrho =400,
+    input_dft = 'PBE',
+    vdw_corr = 'dft-d3',
+    occupations = 'smearing',
+    degauss = 0.005,
+    smearing = 'gaussian',
+/
+&electrons
+    electron_maxstep = 150
+    conv_thr = 1.0d-6
+    diagonalization='david'
+    mixing_beta=0.5d0
+/
+&ions
+	ion_dynamics='bfgs',
+/
+&cell
+	press=0,
+/
+ATOMIC_SPECIES
+Mg 24.305 Mg.upf
+O 15.999 O.upf
+
+ATOMIC_POSITIONS {angstrom}
+Mg    0.000000 0.000000 0.000000 
+
+Mg    0.000000 2.105500 2.105500 
+
+Mg    2.105500 0.000000 2.105500 
+
+Mg    2.105500 2.105500 0.000000 
+
+O    2.105500 2.105500 2.105500 
+
+O    2.105500 0.000000 0.000000 
+
+O    0.000000 2.105500 0.000000 
+
+O    0.000000 0.000000 2.105500 
+
+K_POINTS {automatic}
+ 5 5 5 0 0 0 
+CELL_PARAMETERS {angstrom}
+ 4.211000 0.000000 0.000000
+ 0.000000 4.211000 0.000000
+ 0.000000 0.000000 4.211000

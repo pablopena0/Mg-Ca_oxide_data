@@ -1,0 +1,2 @@
+Cambiar el nombre del elemento en el script.
+Cambiar la simetría de la celda en el script.

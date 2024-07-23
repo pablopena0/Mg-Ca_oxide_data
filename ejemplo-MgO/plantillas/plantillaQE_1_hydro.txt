@@ -1,0 +1,13 @@
+&control
+	calculation='vc-relax', 
+    restart_mode='from_scratch',
+	wf_collect= .false., 
+    nstep = 100,
+    pseudo_dir = '.', 
+    outdir='./tmp', 
+    tprnfor= .true.,
+    disk_io = 'none',
+/
+&system
+    ibrav=  0,
+    

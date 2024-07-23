@@ -1,0 +1,7 @@
+#!/bin/bash 
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=8
+#SBATCH --time=45:50:00
+#SBATCH --partition=p_fast
+#SBATCH --mem=7520M
+#SBATCH --hint=nomultithread

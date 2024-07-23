@@ -1,0 +1,12 @@
+Job runing on nh009
+Choosing scratch ...
+Automatic scratch folder selection
+/gscratch/wmafgfma/693001
+/gscratch/wmafgfma/693001 directory
+cp MgO_deform_-4.in ../../../pseudo-potentials/Mg.upf ../../../pseudo-potentials/O.upf to  /gscratch/wmafgfma/693001/.
+Running: /usr/bin/time -p srun pw.x -ndiag 1 < MgO_deform_-4.in > MgO_deform_-4.out
+real 26.75
+user 0.01
+sys 0.02
+Moving from /gscratch/wmafgfma/693001 to /home/wmafgfma/PABLO/calculos_estructuras/01_MgO/in_files/angular_deform_xy/MgO_deform_-4.693001
+mv /gscratch/wmafgfma/693001/* /home/wmafgfma/PABLO/calculos_estructuras/01_MgO/in_files/angular_deform_xy/MgO_deform_-4.693001

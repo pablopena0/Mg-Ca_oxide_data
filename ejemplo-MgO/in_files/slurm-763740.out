@@ -1,0 +1,31 @@
+Job running on nh037
+Choosing scratch ...
+Automatic scratch folder selection
+/scratch/wmafgfma/763740
+/scratch/wmafgfma/763740 directory
+Copying files to /scratch/wmafgfma/763740:
+Files: MgO.in ../../pseudo-potentials/Mg.upf ../../pseudo-potentials/O.upf
+Running: /usr/bin/time -p srun pw.x -ndiag 1 < MgO.in > MgO.out
+real 23.29
+user 0.00
+sys 0.01
+Contents of scratch directory after execution:
+total 368
+-rw-r--r-- 1 wmafgfma wdaga 207480 Jul 13 16:06 Mg.upf
+-rw-r--r-- 1 wmafgfma wdaga   1062 Jul 13 16:06 MgO.in
+-rw-r--r-- 1 wmafgfma wdaga  18189 Jul 13 16:06 MgO.out
+-rw-r--r-- 1 wmafgfma wdaga 138804 Jul 13 16:06 O.upf
+drwxr-xr-x 3 wmafgfma wdaga     37 Jul 13 16:06 out
+-rwx------ 1 wmafgfma wdaga   1024 Jul 13 16:06 slurm_script
+Moving from /scratch/wmafgfma/763740 to /home/wmafgfma/PABLO/calculos_estructuras/01_MgO/in_files/MgO.763740
+mv /scratch/wmafgfma/763740/* /home/wmafgfma/PABLO/calculos_estructuras/01_MgO/in_files/MgO.763740
+Contents of working directory after recovery:
+total 32
+drwxr-xr-x  5 wmafgfma wdaga 4096 Jun 22 19:54 MgO.729533
+drwxr-xr-x  3 wmafgfma wdaga 4096 Jul 13 16:06 MgO.763740
+-rw-r--r--  1 wmafgfma wdaga 1062 Jul 13 16:05 MgO.in
+-rw-r--r--  1 wmafgfma wdaga 1024 Jul 13 16:06 MgO.slurm
+drwxr-xr-x 10 wmafgfma wdaga 4096 Feb  4 13:34 angular_deform_xy
+drwxr-xr-x 10 wmafgfma wdaga 4096 Feb  4 13:34 axial_deform_x
+drwxr-xr-x 10 wmafgfma wdaga 4096 Feb  4 13:39 hydrostatic_deform
+-rw-r--r--  1 wmafgfma wdaga  993 Jul 13  2024 slurm-763740.out
